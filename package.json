@@ -1,0 +1,27 @@
+{
+  "name": "testone",
+  "version": "1.0.0",
+  "description": "schdeuler",
+  "main": "index.js",
+  "scripts": {
+    "start": "setsid node /home/test/index.js &",
+    "stop": "pkill node",
+    "restart": "npm stop; echo 'xmcc stop...'; sleep 5; npm start; echo 'scheduler start'"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LadyYang/schedule.git"
+  },
+  "author": "wxx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LadyYang/scheduler/issues"
+  },
+  "homepage": "https://github.com/LadyYang/scheduler#readme",
+  "dependencies": {
+    "log4js": "^4.0.1",
+    "mysql": "^2.16.0",
+    "ping": "^0.2.2"
+  }
+}
